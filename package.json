@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/itross/c11n/issues"
   },
-  "homepage": "https://github.com/itross/c11n#readme"
+  "homepage": "https://github.com/itross/c11n#readme",
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
 }
