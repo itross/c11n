@@ -1,0 +1,44 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": "8080"
+  },
+  "fastify": {
+    "logger": {
+      "level": "debug",
+      "redact": {
+        "paths": [
+          "req.headers.authorization",
+          "headers.authorization",
+          "*.password",
+          "*.password_hash",
+          "password_hash",
+          "passwordHash",
+          "password",
+          "[*].password"
+        ],
+        "censor": "**GDPR-COMPLIANT-REDACTION**"
+      }
+    }
+  },
+  "app": {
+    "k1": "v1",
+    "jwt": {
+      "secret": "segreta!!!"
+    },
+    "modules": [
+      {
+        "name": "uaa",
+        "prefix": "/uaa",
+        "db": {
+          "client": "mysql2",
+          "connection": "{{env:SBA_UAA_DATABASE_URL,key:prod/sosp/uaa/db/connection}}",
+          "pool": {
+            "min": 0,
+            "max": 10
+          }
+        }
+      }
+    ]
+  }
+}
