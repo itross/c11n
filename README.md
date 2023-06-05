@@ -12,6 +12,8 @@ npm i @itross/c11n
 
 TODO
 
+__NOTE__: c11n.config.json is just a sample config file for tests.
+
 ## API
 
 TODO
