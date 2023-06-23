@@ -1,6 +1,6 @@
 {
   "name": "@itross/c11n",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.js app configuration from file, envirnoment variables and remote secrets manager with JSON schema verification and type coercion",
   "main": "index.js",
   "scripts": {
@@ -24,16 +24,15 @@
   },
   "homepage": "https://github.com/itross/c11n#readme",
   "devDependencies": {
-    "eslint": "^8.41.0",
+    "eslint": "^8.43.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^16.0.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "tap": "^16.3.4"
+    "eslint-plugin-promise": "^6.1.1"
   },
   "dependencies": {
-    "@aws-sdk/client-secrets-manager": "^3.342.0",
+    "@aws-sdk/client-secrets-manager": "^3.358.0",
     "ajv": "^8.12.0",
-    "dotenv": "^16.1.3"
+    "dotenv": "^16.3.1"
   }
 }
