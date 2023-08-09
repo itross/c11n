@@ -25,21 +25,7 @@
   "app": {
     "k1": "v1",
     "jwt": {
-      "secret": "segreta!!!"
-    },
-    "modules": [
-      {
-        "name": "uaa",
-        "prefix": "/uaa",
-        "db": {
-          "client": "mysql2",
-          "connection": "{{env:THIS_IS_AN_ENV_VAR,key:/this/is/only/a/placeholder}}",
-          "pool": {
-            "min": 0,
-            "max": 10
-          }
-        }
-      }
-    ]
+      "secret": "{{env:THIS_IS_AN_ENV_VAR,key:this/is/only/a/placeholder}}"
+    }
   }
 }
