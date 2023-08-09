@@ -1,4 +1,7 @@
 node_modules/
 test/
 .nvmrc
-
+c11n.config.json
+.env
+.env.example
+example/
