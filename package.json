@@ -1,6 +1,6 @@
 {
   "name": "@itross/c11n",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node.js app configuration from file, envirnoment variables and remote secrets manager with JSON schema verification and type coercion",
   "main": "index.js",
   "scripts": {

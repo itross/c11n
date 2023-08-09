@@ -1,4 +1,5 @@
 {
+  "NOTE": "this is only an example placeholder",
   "server": {
     "host": "localhost",
     "port": "8080"
@@ -32,7 +33,7 @@
         "prefix": "/uaa",
         "db": {
           "client": "mysql2",
-          "connection": "{{env:SBA_UAA_DATABASE_URL,key:prod/sosp/uaa/db/connection}}",
+          "connection": "{{env:THIS_IS_AN_ENV_VAR,key:/this/is/only/a/placeholder}}",
           "pool": {
             "min": 0,
             "max": 10
